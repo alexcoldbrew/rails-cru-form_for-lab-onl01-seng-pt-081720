@@ -1,0 +1,9 @@
+<h1>My song name My edit <%= @song.name %></h1>
+
+<%# really needs to utilize the URL helper, ideally but this is functional.. %>
+
+<%= link_to @song.genre.name, genre_path(@song.genre) %>
+
+<br>
+
+<a href="/artists/<%= @song.artist.id %>"><%= @song.artist.name %></a>
